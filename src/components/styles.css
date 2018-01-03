@@ -1,0 +1,251 @@
+.root-container {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.projects-title {
+  margin-bottom: 48px;
+}
+
+.projects-title .fa {
+  color: #FF6B6C;
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.socialMediaBar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+}
+
+.socialMediaBar span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+.socialMediaBar span:hover {
+  color: #FF6B6C;
+}
+
+.socialMediaBar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.bottomIconNav {
+  position: absolute;
+  bottom: 12px;
+}
+
+.bottomIconNav:hover > p {
+  opacity: 1;
+}
+.bottomIconNav:hover > .icon {
+  opacity: 1;
+}
+
+.bottomIconNav p {
+  margin: 0;
+  color: #FF6B6C;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.bottomIconNav .icon {
+  color: #FF6B6C;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.circleImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  border: 3px solid #fafafa;
+  margin-bottom: 12px;
+}
+
+a.circleImage {
+  text-decoration: none;
+  color: inherit;
+}
+
+.highlight {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.highlight:hover {
+  background-position: right;
+}
+
+.highlight:hover > .title {
+  opacity: 1;
+}
+
+.highlight:hover > .overlay {
+  opacity: 1;
+}
+
+.highlight .title {
+  opacity: 0;
+  transition: all 0.5s;
+  color: white;
+  z-index: 10;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.highlight .title h3 {
+  font-size: 16px;
+  color: white;
+}
+
+.highlight .overlay {
+  position: absolute;
+  background-color: rgba(255, 107, 108, 0.8);
+  opacity: 0;
+  transition: all 0.5s;
+  border: 3px solid #ffe1e1;
+}
+
+.circleImage#profile {
+  background-image: url("./images/profile.jpg");
+  background-size: cover;
+}
+
+.circleImage#e2w {
+  background-image: url("./images/e2w.png");
+  background-size: cover;
+}
+
+.circleImage#tnjl {
+  background-image: url("./images/tnjl.png");
+  background-size: cover;
+}
+
+.circleImage#zachphan {
+  background-image: url("./images/zachphan.png");
+  background-size: cover;
+}
+
+.circleImage#flight {
+  background-image: url("./images/flight.png");
+  background-size: cover;
+}
+
+.circleImage#travel {
+  background-image: url("./images/travel.png");
+  background-size: cover;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc8f90;
+  margin-top: 24px;
+}
+
+.footer .content p{
+  margin: 0;
+  font-size: 12px;
+  color: white;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.counter h3 {
+  font-size: 18px;
+}
+
+.counter span{
+  color: #FF6B6C;
+}
+
+.plus-one {
+  position: absolute;
+  opacity: 1;
+  animation-name: drop;
+  animation-duration: 0.75s;
+  color: #FF6B6C;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes drop {
+  0%   {top: -6px; opacity: 1;}
+  25%  {top: -12px; opacity: 0.75;}
+  50%  {top: -18px; opacity: 0.50;}
+  75%  {top: -24px; opacity: 0.25;}
+  100% {top: -30px; opacity: 0;}
+}
