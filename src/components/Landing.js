@@ -7,16 +7,13 @@ import Counter from "./Counter";
 
 
 class Landing extends Component {
+
   render() {
     return (
         <div className="container">
-          <Counter/>
-          <CircleImage id="profile"/>
-          <h1>Kevin Nam</h1>
-          <h3>Full-Stack Web Developer</h3>
-          <h3>Montreal, QC, Canada</h3>
-          <SocialMediaBar/>
-          <BottomIconNav/>
+          <h1>Enter your name:</h1>
+          <input id="name" type="text" value={this.props.nameValue} onChange={this.props.onChange}/>
+          <input onClick={this.props.onClick} id="submit" type="submit" value="Join" />
         </div>
     );
   }
